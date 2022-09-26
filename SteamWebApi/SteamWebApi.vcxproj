@@ -134,6 +134,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="playerbans.h" />
     <ClInclude Include="isteamuser.h" />
     <ClInclude Include="isteaminterface.h" />
     <ClInclude Include="playersummary.h" />

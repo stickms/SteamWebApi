@@ -2,6 +2,7 @@
 
 #include "isteaminterface.h"
 #include "playersummary.h"
+#include "playerbans.h"
 
 namespace steamweb
 {
@@ -12,6 +13,9 @@ namespace steamweb
 
 		PlayerSummaryModel GetPlayerSummary(uint64_t steamid);
 		std::vector<PlayerSummaryModel> GetPlayerSummary(std::vector<uint64_t> steamids);
+
+		PlayerBansModel GetPlayerBans(uint64_t steamid);
+		std::vector<PlayerBansModel> GetPlayerBans(std::vector<uint64_t> steamids);
 
 	protected:
 

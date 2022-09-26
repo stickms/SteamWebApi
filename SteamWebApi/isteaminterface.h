@@ -16,7 +16,7 @@ namespace steamweb
 		virtual std::string GetInterfaceName() = 0;
 
 		// Should be cast to the appropriate model
-		nlohmann::json SteamWebRequest(	const std::string& name, const std::string& ver,
+		nlohmann::json SteamWebRequest(	const std::string& name, uint16_t version,
 										std::vector<std::pair<std::string, std::string>> data = {} );
 	};
 }

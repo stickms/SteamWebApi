@@ -9,12 +9,14 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="Models">
       <UniqueIdentifier>{5b1ffd0a-a8d0-425d-ae54-0b8310b99e28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{21bca593-4ffa-4950-9450-1825e652cf96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\ISteamUser">
+      <UniqueIdentifier>{89ef97a4-02bd-446e-8642-77c69c39e754}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -22,24 +24,27 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="isteaminterface.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Interfaces</Filter>
     </ClCompile>
     <ClCompile Include="isteamuser.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Interfaces</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="isteaminterface.h">
+    <ClInclude Include="steamconst.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="isteamuser.h">
-      <Filter>Header Files</Filter>
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="isteaminterface.h">
+      <Filter>Interfaces</Filter>
     </ClInclude>
     <ClInclude Include="playersummary.h">
-      <Filter>Models</Filter>
+      <Filter>Models\ISteamUser</Filter>
     </ClInclude>
-    <ClInclude Include="steamconst.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="playerbans.h">
+      <Filter>Models\ISteamUser</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

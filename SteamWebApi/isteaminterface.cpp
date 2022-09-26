@@ -14,15 +14,13 @@ void steamweb::setapikey(const std::string& key)
     apikey = key;
 }
 
-nlohmann::json ISteamInterface::SteamWebRequest(const std::string& name, const std::string& ver,
+nlohmann::json ISteamInterface::SteamWebRequest(const std::string& name, uint16_t version,
                                                 std::vector<std::pair<std::string, std::string>> data)
 {
     std::string url = STEAM_API_URL;
-
     url.append(GetInterfaceName() + "/");
-    url.append(name + "/");
-    url.append(ver + "/");
-    url.append("?key=" + apikey);
+    url.append(name + "/v" + std::to_string(version));
+    url.append("/?key=" + apikey);
 
     for (auto& tag : data)
         url.append("&" + tag.first + "=" + tag.second);

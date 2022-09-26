@@ -22,16 +22,16 @@ namespace steamweb
 			SW_VALUE(profilestate);
 			SW_VALUE(commentpermission);
 
-			SW_OPTIONAL(realname, "");
-			SW_OPTIONAL(primaryclanid, "0");
-			SW_OPTIONAL(timecreated, 0);
-			SW_OPTIONAL(lastlogoff, 0);
-			SW_OPTIONAL(gameid, "0");
-			SW_OPTIONAL(gameserverip, "0.0.0.0:0");
-			SW_OPTIONAL(gameextrainfo, "");
-			SW_OPTIONAL(loccountrycode, "");
-			SW_OPTIONAL(locstatecode, "");
-			SW_OPTIONAL(loccityid, "");
+			SW_VALUE(realname);
+			SW_VALUE(primaryclanid);
+			SW_VALUE(timecreated);
+			SW_VALUE(lastlogoff);
+			SW_VALUE(gameid);
+			SW_VALUE(gameserverip);
+			SW_VALUE(gameextrainfo);
+			SW_VALUE(loccountrycode);
+			SW_VALUE(locstatecode);
+			SW_VALUE(loccityid);
 		}
 
 		// Public Data (never null/unknown)
