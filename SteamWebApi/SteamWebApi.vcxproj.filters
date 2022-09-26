@@ -29,6 +29,9 @@
     <ClCompile Include="isteamuser.cpp">
       <Filter>Interfaces</Filter>
     </ClCompile>
+    <ClCompile Include="playerfriend.h">
+      <Filter>Models\ISteamUser</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="steamconst.h">
@@ -44,6 +47,9 @@
       <Filter>Models\ISteamUser</Filter>
     </ClInclude>
     <ClInclude Include="playerbans.h">
+      <Filter>Models\ISteamUser</Filter>
+    </ClInclude>
+    <ClInclude Include="vanityurl.h">
       <Filter>Models\ISteamUser</Filter>
     </ClInclude>
   </ItemGroup>

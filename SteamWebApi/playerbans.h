@@ -6,27 +6,27 @@
 
 namespace steamweb
 {
-	struct PlayerBansModel
+	struct PlayerBans_t
 	{
-		PlayerBansModel(nlohmann::json js)
+		PlayerBans_t(nlohmann::json js)
 		{
-			SW_VALUE(SteamId);
-			SW_VALUE(CommunityBanned);
-			SW_VALUE(VACBanned);
-			SW_VALUE(NumberOfVACBans);
-			SW_VALUE(DaysSinceLastBan);
-			SW_VALUE(NumberOfGameBans);
-			SW_VALUE(EconomyBan);
+			SW_CVALUE(steamid, "SteamId");
+			SW_CVALUE(communitybanned, "CommunityBanned");
+			SW_CVALUE(vacbanned, "VACBanned");
+			SW_CVALUE(numberofvacbans, "NumberOfVACBans");
+			SW_CVALUE(dayssincelastban, "DaysSinceLastBan");
+			SW_CVALUE(numberofgamebans, "NumberOfGameBans");
+			SW_CVALUE(economyban, "EconomyBan");
 		}
 
 		// Blame valve for these having caps
 
-		std::string	SteamId;
-		bool		CommunityBanned;
-		bool		VACBanned;
-		uint32_t	NumberOfVACBans;
-		uint64_t	DaysSinceLastBan;
-		uint32_t	NumberOfGameBans;
-		std::string EconomyBan;
+		std::string	steamid;
+		bool		communitybanned;
+		bool		vacbanned;
+		uint32_t	numberofvacbans;
+		uint64_t	dayssincelastban;
+		uint32_t	numberofgamebans;
+		std::string economyban;
 	};
 }

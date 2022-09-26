@@ -8,11 +8,9 @@
 int main()
 {
     // Example usage
-    steamweb::setapikey("API-KEY-HERE");
+    steamweb::setapikey("API-KEY-HERE"); 
+    
+    auto result = steamweb::steamuser->GetPlayerSummary(76561197960287930);
 
-    auto summary = steamweb::steamuser->GetPlayerSummary(76561197960287930);
-
-    std::cout << summary.personaname << std::endl;
-
-    Sleep(2500);
+    std::cout << result.personaname << std::endl;
 }

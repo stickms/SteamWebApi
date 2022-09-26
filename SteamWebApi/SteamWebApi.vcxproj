@@ -132,8 +132,10 @@
     <ClCompile Include="isteamuser.cpp" />
     <ClCompile Include="isteaminterface.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="playerfriend.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="vanityurl.h" />
     <ClInclude Include="playerbans.h" />
     <ClInclude Include="isteamuser.h" />
     <ClInclude Include="isteaminterface.h" />

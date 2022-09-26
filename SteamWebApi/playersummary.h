@@ -6,10 +6,10 @@
 
 namespace steamweb
 {
-	struct PlayerSummaryModel
+	struct PlayerSummary_t
 	{
 		// We have to deserialize this stuff manually (C++ moment)
-		PlayerSummaryModel(nlohmann::json js)
+		PlayerSummary_t(nlohmann::json js)
 		{
 			SW_VALUE(steamid);
 			SW_VALUE(personaname);
